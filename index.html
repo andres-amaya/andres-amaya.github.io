@@ -4,13 +4,27 @@
         <title>CSC101</title>
         <meta charset="utf-8"/>
         <link rel="stylesheet" href="styles.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+            $("button").click(function(){
+                $("img").css({"border": "5px solid DodgerBlue", "transition": "3s"});
+                var div = $("div");  
+                div.animate({fontSize: '30em'}, "slow");
+                $("h1").css({"color": "DodgerBlue", "transition": "3s"});
+                div.animate({fontSize: '1em'}, "slow");
+            });
+            });
+        </script>
+
     </head>
 
     <body>
-
-        <h1>CIS 128 course at College of San Mateo by Andres Amaya</h1> 
+        <div>
+        <h1>Homework 1</h1> 
+        </div>
         
-        <p> <img class="aligned" src="andres.jpg" alt="A picture of Andres Amaya in a suit" width="230" height="230"> My name is Andres Amaya and I am a student of CSM for more than 2 years.</p>
+        <p> <img class="aligned" src="andres.png" alt="A picture of Andres Amaya in a suit" width="178" height="240"> My name is Andres Amaya and I am a student of this college for more than 2 years.</p>
 
 
         <p>I am attending this class to learn about web and app development but I see now that it will just be a check in the box. 
@@ -26,10 +40,13 @@
 
         <h2>Resources</h2>
         <ul>
+            <li><a href="url">link text</a></li>
             <li><a href="https://www.freecodecamp.org/">Free Code Camp</a> - Free Code Camp is an online curriculum for the casual hobbyist to learn web development.</li>
             <li><a href="https://www.w3schools.com/default.asp">W3Schools</a> - W3Schools is an online reference for HTML, CSS, Javascript and more!</li>
             <li><a href="https://www.codecademy.com/">Code Academy</a> - A very user friendly system to learn coding for Web Development.</li>
             <li><a href="https://www.youtube.com">YouTube</a> - Detailed explanations on Web Development</li>
         </ul>
+
+        <button>Start Animation</button>
     </body>
 </html>
